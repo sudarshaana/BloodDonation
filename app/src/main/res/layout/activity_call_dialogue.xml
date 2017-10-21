@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="5dp"
+    android:paddingTop="20dp"
+    tools:context="me.smondal.blooddonation.activity.CallDialogue">
+
+
+    <TextView
+        android:id="@+id/titleDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Make a call to Sudarshan mondal?" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/titleDialog"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="23dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/noButton"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="No" />
+
+        <Button
+            android:id="@+id/yesButton"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Yes" />
+    </LinearLayout>
+
+
+</RelativeLayout>

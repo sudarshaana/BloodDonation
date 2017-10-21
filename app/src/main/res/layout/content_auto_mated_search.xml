@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="me.smondal.blooddonation.activity.AutomatedSearch"
+    tools:showIn="@layout/activity_auto_mated_search">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            card_view:cardCornerRadius="1dp"
+            card_view:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select Blood Group" />
+
+                <Spinner
+                    android:id="@+id/bloodgrounSelection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/bloodGroupList"
+                    android:padding="5dp">
+
+                </Spinner>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            card_view:cardCornerRadius="1dp"
+            card_view:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select location" />
+
+                <Spinner
+                    android:id="@+id/division"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/SelectDivision"
+                    android:padding="10dp">
+
+                </Spinner>
+
+                <Spinner
+                    android:id="@+id/district"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                </Spinner>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            card_view:cardCornerRadius="1dp"
+            card_view:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Write patient's problem" />
+
+                    <EditText
+                        android:id="@+id/patientsCondition"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="e.g. pregnant mother" />
+
+                </LinearLayout>
+
+
+                <!--</android.support.v7.widget.CardView>-->
+
+                <!--<android.support.v7.widget.CardView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:clickable="true"-->
+                <!--android:foreground="?android:attr/selectableItemBackground"-->
+                <!--card_view:cardCornerRadius="1dp"-->
+                <!--card_view:cardUseCompatPadding="true">-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Write patient's Location" />
+
+                    <EditText
+                        android:id="@+id/patientsLocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="e.g. Hospital Name" />
+
+                </LinearLayout>
+
+                <!--</android.support.v7.widget.CardView>-->
+
+                <!--<android.support.v7.widget.CardView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:clickable="true"-->
+                <!--android:foreground="?android:attr/selectableItemBackground"-->
+                <!--card_view:cardCornerRadius="1dp"-->
+                <!--card_view:cardUseCompatPadding="true">-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Problem Details" />
+
+                    <EditText
+                        android:id="@+id/problemDetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="e.g. write in details" />
+
+                </LinearLayout>
+                <!--</android.support.v7.widget.CardView>-->
+
+
+                <!--<android.support.v7.widget.CardView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:clickable="true"-->
+                <!--android:foreground="?android:attr/selectableItemBackground"-->
+                <!--card_view:cardCornerRadius="1dp"-->
+                <!--card_view:cardUseCompatPadding="true">-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Select Date &amp; Time (When blood is needed)" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/datePicker"
+                            style="@style/Widget.AppCompat.Button.Colored"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pick Date"
+                            android:textAllCaps="false" />
+
+                        <Button
+                            android:id="@+id/timePicker"
+                            style="@style/Widget.AppCompat.Button.Colored"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pick Time"
+                            android:textAllCaps="false" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            card_view:cardCornerRadius="1dp"
+            card_view:cardUseCompatPadding="true">
+
+            <Button
+                android:id="@+id/submitButton"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Search"
+                android:textAllCaps="false" />
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</ScrollView>

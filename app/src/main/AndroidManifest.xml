@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="me.smondal.blooddonation">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".firebaseTools.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".firebaseTools.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".activity.SearchBlood"
+            android:label="@string/title_activity_search_blood"
+            android:parentActivityName=".activity.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="me.smondal.blooddonation.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.AutomatedSearch"
+            android:label="@string/title_activity_auto_mated_search"
+            android:parentActivityName=".activity.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="me.smondal.blooddonation.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.LogIn"
+            android:label="@string/title_activity_log_in"
+            android:parentActivityName=".activity.MainActivity"
+            android:theme="@style/AppTheme.Dark">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="me.smondal.blooddonation.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.Register"
+            android:label="@string/title_activity_register"
+            android:parentActivityName=".activity.LogIn"
+            android:theme="@style/AppTheme.Dark">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="me.smondal.blooddonation.activity.LogIn" />
+        </activity>
+        <activity
+            android:name=".activity.Messages"
+            android:label="@string/title_activity_messages"
+            android:parentActivityName=".activity.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="me.smondal.blooddonation.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.Profile"
+            android:label="@string/title_activity_profile"
+            android:parentActivityName=".activity.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="me.smondal.blooddonation.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.SearchResults"
+            android:label="@string/title_activity_search_results"
+            android:parentActivityName=".activity.SearchBlood"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="me.smondal.blooddonation.activity.SearchBlood" />
+        </activity>
+        <activity
+            android:name=".activity.CallDialogue"
+            android:theme="@style/Theme.AppCompat.Light.Dialog"></activity>
+        <activity
+            android:name=".activity.UpdateProfile"
+            android:label="@string/title_activity_update_profile"
+            android:parentActivityName=".activity.Profile"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="me.smondal.blooddonation.activity.Profile" />
+        </activity>
+    </application>
+
+</manifest>
